@@ -13,3 +13,5 @@ For the ETL pipeline, Python is used as it contains libraries such as pandas, th
 There are 2 types of data involved, song and log data. For song data, it contains information about songs and artists, which we extract from and load into users and artists dimension tables
 
 Log data gives the information of each user session. From log data, we extract and load into time, users dimension tables and songplays fact table.
+
+Run etl.py to read from the song and logs json files, denormalize the data into fact and dimension tables and gives the output of these tables in S3 in the form of parquet files.
